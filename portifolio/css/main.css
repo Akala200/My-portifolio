@@ -68,7 +68,7 @@ body {
 #about{
 	padding-left: 12px;
 	padding-bottom: 60px;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 #intro-content{
@@ -129,6 +129,93 @@ body {
 		color: #153254;
 	}
 
+
+	.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    margin: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 50px;
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+      border-color: #e64522;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
+
 }
 
 @media (min-width:480px) {
@@ -148,22 +235,28 @@ body {
 	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	@media (min-width:801px) {
 		#picture{
-			margin-left: 10px;
+			margin-left: 80px;
 		}
 	}
 
 	/* big landscape tablets, laptops, and desktops */ 
 	@media (min-width:1025px) {
 		#picture{
-			margin-left: 80px;
+			margin-left: 100px;
+		}
+
+		#intro-content{
+			margin-top: 50px;
+			font-size: 18px;
 		}
 	}
 
 	/* hi-res laptops and desktops */
 	@media (min-width:1281px) {
 		#picture{
-			width: 350px;
+			width: 335px;
 			height: 350px;
+			margin-left: 150px;
 		}
 
 		#intro-content{
@@ -197,6 +290,8 @@ body {
 			font-family: 'Aladin', cursive;
 			color: #153254;
 			font-size: 25px;
+			margin-top: 20px;
+			margin-right: 120px;
 		}
 
 	}
