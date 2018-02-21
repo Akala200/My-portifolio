@@ -11,8 +11,8 @@ body {
 .container-fluid{
 	position: relative;
 	width: 100%;
+	height: auto;
 	margin: 0 auto;
-	padding: 0 20px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -26,39 +26,45 @@ body {
 
 }
 
+.large-header {
+	position: relative;
+	background-color: #6c177d;
+background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
+	overflow: hidden;
+	color: #fff;
+	height: auto;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
 .expertise-block h4{
 	font-size: 40px;
 	color: #153254;
 }
 
-.content{
-	margin-bottom: 
-}
-
 /* Banner styling */
-
-#topcontainer{
-	background-color: #6B317F;
-	color: #fff;
-	height: auto;
-}
-
 
 
 #intro-text{
 	font-style: bold;
-	margin-top: -650px;
-	margin-bottom: 100px;
 	color: #fff;
-	font-size: 55px;
 	font-family: 'Aladin', cursive;
-	font-style: bold;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
 }
 
 
 #name{
-	font-size: 22px;
+	font-size: 20px;
 	padding: 40px;
+	height: 5px;
 }
 
 
@@ -76,25 +82,38 @@ body {
 	color: #153254;
 }
 
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+
+
 /*Different screen styling*/
 
-@media (min-width:220px) {
+@media (min-width: 320px) and (max-width : 359px) {
 	#picture{
-		width: 255px;
-		height: 255px;
-		margin-bottom: 50px;
+		width: 200px;
+		height: 250px;
+		margin-left: 30.5px;
+		margin-bottom: 30px;
 	}
 
-	#topcontainer{
-		height: 500px;
-	}
 
 	#intro-text{
 		font-size: 30px;
 	}
 
+	#intro-content{
+		font-size: 18px;
+	}
+
 	#name{
-		font-size: 20px
+		font-size: 20px;
+		margin-left: 32px;
 	}
 
 	#me {
@@ -106,7 +125,7 @@ body {
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
-	#experience{
+	#social{
 		background-color: #6B317F;
 		color: #fff;
 		height: 440px;
@@ -115,195 +134,122 @@ body {
 		padding: 1px;
 	}
 
-	#experience h3 {
+	#social h3 {
 		margin-top: 80px;
 		margin-bottom: 100px;
 		color: #fff;
-	    font-family: 'Aladin', cursive;
+		font-family: 'Aladin', cursive;
 		font-size: 45px;
-	}
-
-	.summary{
-		font-size: 23px;
-		padding: 20px;
-		color: #153254;
 	}
 
 
 	.smGlobalBtn{ /* global button class */
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    border:2px solid #ddd; /* add border to the buttons */
-    box-shadow: 0 3px 3px #999;
-    padding: 0px;
-    margin: 15px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-size: 35px;
-    font-weight: normal;
-    line-height: 2em;
-    border-radius: 50px;
-    -moz-border-radius:40px;
-    -webkit-border-radius:40px;
-}
-
-/* facebook button class*/
-.facebookBtn{
-    background: #4060A5;
-}
-
-.facebookBtn:before{ /* use :before to add the relevant icons */
-    font-family: "FontAwesome";
-    content: "\f09a"; /* add facebook icon */
-}
-
-.facebookBtn:hover{
-    color: #4060A5;
-    background: #fff;
-    border-color: #4060A5; /* change the border color on mouse hover */
-}
-
-/* twitter button class*/
-.twitterBtn{
-    background: #00ABE3;
-}
-
-.twitterBtn:before{
-      font-family: "FontAwesome";
-      content: "\f099"; /* add twitter icon */
-      
-}
-
-.twitterBtn:hover{
-      color: #00ABE3;
-      background: #fff;
-      border-color: #00ABE3;
-}
-
-/* google plus button class*/
-.googleplusBtn{
-    background: #e64522;
-}
-
-.googleplusBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0d5"; /* add googleplus icon */
-}
-
-.googleplusBtn:hover{
-      color: #e64522;
-      background: #fff;
-      border-color: #e64522;
-}
-
-/* linkedin button class*/
-.linkedinBtn{
-    background: #0094BC;
-}
-
-.linkedinBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0e1"; /* add linkedin icon */
-}
-
-.linkedinBtn:hover{
-      color: #0094BC;
-      background: #fff;
-      border-color: #0094BC;
-}
-
-}
-
-@media (min-width:480px) {
-	#picture{
-		margin-left: 82px;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
 	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+
 }
 
-@media (min-width:600px) {
+@media (min-width: 375px) and (max-width : 383px) {
 	#picture{
-		margin-left: 135px;
+		width: 260px;
+		height: 320px; 
+		margin-bottom: 30px;
+		margin-left: 28px;
 	}
+
 	#intro-text{
-		font-size: 30px;
+		font-size: 45px;
 	}
 
-	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
-	@media (min-width:801px) {
-		#picture{
-			margin-left: 80px;
-		}
+	#intro-content{
+		font-size: 22px;
 	}
 
-	/* big landscape tablets, laptops, and desktops */ 
-	@media (min-width:1025px) {
-		#picture{
-			margin-left: 100px;
-		}
-
-		#intro-content{
-			margin-top: 50px;
-			font-size: 18px;
-		}
-	}
-
-	/* hi-res laptops and desktops */
-	@media (min-width:1281px) {
-		#picture{
-			width: 335px;
-			height: 350px;
-			margin-left: 150px;
-		}
-
-		#intro-content{
-			font-size: 21px;
-		}
-
-
-		#topcontainer{
-			height: auto;
-		}
-
-		#intro-text{
-			font-size: 105px;
-		}
-
-		#name{
-			font-size: 25px;
-		}
-
-		#me {
-			background-color: #c0c5ce;
-			text-align: center;
-			margin: 0 auto;
-			padding: 20px;
-		}
-
-		#me .expertise-block {
-			margin: 4.0rem 0 1.0rem;
-		}
-		#intro-content{
-			font-family: 'Aladin', cursive;
-			color: #153254;
-			font-size: 25px;
-			margin-top: 20px;
-			margin-right: 120px;
-		}
-
-	}
-
-	/* Skills styling */
-
-	#skills{
-		margin-bottom: 100px;
-	}
-
-	#secondcontainer{
-
+	#name{
+		font-size: 20px;
+		margin-left: 53px;
 	}
 
 	#me {
@@ -315,125 +261,1779 @@ body {
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
-
-
-	/*Experience styling */
-
-	#experience{
+	#social{
 		background-color: #6B317F;
 		color: #fff;
-		height: 350px;
+		height: 440px;
 		text-align: center;
 		margin: 0 auto;
 		padding: 1px;
 	}
 
-	#experience h3 {
-		margin-top: 50px;
-		margin-bottom: 60px;
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
 		color: #fff;
-	    font-family: 'Aladin', cursive;
-		font-size: 50px;
-	}
-
-	#reach{
-
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
 	}
 
 
-	/* Reach me */
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+}
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (min-width: 360px) and (max-width : 374px) {
+	#picture{
+		width: 260px;
+		height: 320px; 
+		margin-bottom: 30px;
+		margin-left: 20px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+
+	#intro-content{
+		font-size: 22px;
+	}
+
+	#name{
+		font-size: 20px;
+		margin-left: 50px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+}
+
+/* big landscape tablets, laptops, and desktops */ 
+@media (min-width: 384px) and (max-width : 411px) { 
+	
+	#picture{
+		width: 290px;
+		height: 360px; 
+		margin-bottom: 30px;
+		margin-left: 20px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 22px;
+	}
+
+	#name{
+		font-size: 20px;
+		margin-left: 60px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+ }
+
+/* hi-res laptops and desktops */
+@media (min-width: 412px) and (max-width : 413px) { 
+	
+	#picture{
+		width: 290px;
+		height: 360px; 
+		margin-bottom: 30px;
+		margin-left: 28px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+
+	#intro-content{
+		font-size: 22px;
+	}
+
+	#name{
+		font-size: 20px;
+		margin-left: 80px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+}
+
+
+@media (min-width: 414px) and (max-width : 479px) {
+
+	#picture{
+		width: 300px;
+		height: 360px; 
+		margin-bottom: 30px;
+		margin-left: 32px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 22px;
+	}
+
+	#name{
+		font-size: 20px;
+		margin-left: 80px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+ }
+
+ @media (min-width: 480px) and (max-width : 599px) {
+ 	#picture{
+		width: 350px;
+		height: 420px; 
+		margin-bottom: 30px;
+		margin-left: 38px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 22px;
+	}
+
+	#name{
+		font-size: 27px;
+		margin-left: 87px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+ }
+
+  @media (min-width: 600px) and (max-width : 639px) {
+  		#picture{
+		width: 430px;
+		height: 520px; 
+		margin-bottom: 30px;
+		margin-left: 53px;
+	}
+
+	#intro-text{
+		font-size: 78px;
+	}
+	#intro-content{
+		font-size: 27px;
+	}
+
+	#name{
+		font-size: 35px;
+		margin-left: 115px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 35px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+
+  }
+
+
+ @media (min-width: 640px) and (max-width : 767px) {
+ 	#picture{
+		width: 325px;
+		height: 380px; 
+		margin-bottom: 50px;
+		margin-left: 134px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 20px;
+	}
+
+	#name{
+		font-size: 25px;
+		margin-left: 170px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+
+ }
+
+
+  @media (min-width: 768px) and (max-width : 799px) {
+  	#picture{
+		width: 300px;
+		height: 370px; 
+		margin-bottom: 50px;
+		margin-left: 0px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 25px;
+	}
+
+	#name{
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+
+  }
+
+@media (min-width: 800px) and (max-width : 1000px) {
+	#picture{
+		width: 330px;
+		height: 400px; 
+		margin-bottom: 50px;
+		margin-left: 0px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 30px;
+	}
+
+	#name{
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+}
+
+
+ @media (min-width: 1280px) and (max-width : 1439px) {
+ 	#picture{
+		width: 400px;
+		height: 501px; 
+		margin-bottom: 50px;
+		margin-left: 40px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 34px;
+	}
+
+	#name{
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+ }
+
+
+  @media (min-width: 1440px) {
+  	#picture{
+		width: 350px;
+		height: 431px; 
+		margin-bottom: 50px;
+		margin-left: 100px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 27px;
+		margin-top: 80px;
+	}
+
+	#name{
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	#me {
+		background-color: #c0c5ce;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+  }
+
+
+
+
+
+
+/* Skills styling */
+
+#skills{
+	margin-bottom: 100px;
+}
+
+
+#me {
+	background-color: #c0c5ce;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+}
+#me .expertise-block {
+	margin: 4.0rem 0 1.0rem;
+}
+
+
+/*Social styling */
+
+#social{
+	background-color: #6F096D;
+	color: #fff;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1px;
+}
+
+#social h3 {
+	margin-top: 50px;
+	margin-bottom: 60px;
+	color: #fff;
+	font-family: 'Aladin', cursive;
+	font-size: 50px;
+}
+
+#reach{
+
+}
+
+
+/* Reach me */
 
 .smGlobalBtn{ /* global button class */
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    border:2px solid #ddd; /* add border to the buttons */
-    box-shadow: 0 3px 3px #999;
-    padding: 0px;
-    margin: 15px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-size: 35px;
-    font-weight: normal;
-    line-height: 2em;
-    border-radius: 50px;
-    -moz-border-radius:40px;
-    -webkit-border-radius:40px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	border:2px solid #ddd; /* add border to the buttons */
+	box-shadow: 0 3px 3px #999;
+	padding: 0px;
+	margin: 15px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 2em;
+	border-radius: 50px;
+	-moz-border-radius:40px;
+	-webkit-border-radius:40px;
 }
 
 /* facebook button class*/
 .facebookBtn{
-    background: #4060A5;
+	background: #4060A5;
 }
 
 .facebookBtn:before{ /* use :before to add the relevant icons */
-    font-family: "FontAwesome";
-    content: "\f09a"; /* add facebook icon */
+	font-family: "FontAwesome";
+	content: "\f09a"; /* add facebook icon */
 }
 
 .facebookBtn:hover{
-    color: #4060A5;
-    background: #fff;
-    border-color: #4060A5; /* change the border color on mouse hover */
+	color: #4060A5;
+	background: #fff;
+	border-color: #4060A5; /* change the border color on mouse hover */
 }
 
 /* twitter button class*/
 .twitterBtn{
-    background: #00ABE3;
+	background: #00ABE3;
 }
 
 .twitterBtn:before{
-      font-family: "FontAwesome";
-      content: "\f099"; /* add twitter icon */
-      
+	font-family: "FontAwesome";
+	content: "\f099"; /* add twitter icon */
+
 }
 
 .twitterBtn:hover{
-      color: #00ABE3;
-      background: #fff;
-      border-color: #00ABE3;
+	color: #00ABE3;
+	background: #fff;
+	border-color: #00ABE3;
 }
 
 /* google plus button class*/
 .googleplusBtn{
-    background: #e64522;
+	background: #e64522;
 }
 
 .googleplusBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0d5"; /* add googleplus icon */
+	font-family: "FontAwesome";
+	content: "\f0d5"; /* add googleplus icon */
 }
 
 .googleplusBtn:hover{
-      color: #e64522;
-      background: #fff;
-      border-color: #e64522;
+	color: #e64522;
+	background: #fff;
+	border-color: #e64522;
 }
 
 /* linkedin button class*/
 .linkedinBtn{
-    background: #0094BC;
+	background: #0094BC;
 }
 
 .linkedinBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0e1"; /* add linkedin icon */
+	font-family: "FontAwesome";
+	content: "\f0e1"; /* add linkedin icon */
 }
 
 .linkedinBtn:hover{
-      color: #0094BC;
-      background: #fff;
-      border-color: #0094BC;
+	color: #0094BC;
+	background: #fff;
+	border-color: #0094BC;
 }
 
 
 
 
 
-	
+
 
 
 
