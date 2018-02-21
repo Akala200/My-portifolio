@@ -32,7 +32,7 @@ body {
 background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 	overflow: hidden;
 	color: #fff;
-	height: auto;
+	height: 810px;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
@@ -92,7 +92,141 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 
 
 
+
 /*Different screen styling*/
+@media (min-width: 300px) and (max-width : 319px) {
+	
+	#picture{
+		width: 200px;
+		height: 250px;
+		margin-left: 25.5px;
+		margin-bottom: 30px;
+	}
+
+
+	#intro-text{
+		font-size: 30px;
+	}
+
+	#intro-content{
+		font-size: 18px;
+		text-align: center;
+	}
+
+	#name{
+		font-size: 15px;
+		margin-left: 40px;
+	}
+
+	
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 1px;
+	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+
+}
 
 @media (min-width: 320px) and (max-width : 359px) {
 	#picture{
@@ -116,12 +250,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 32px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -252,12 +381,6 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 53px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -389,12 +512,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 50px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -525,12 +643,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 60px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -662,12 +775,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 80px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -798,12 +906,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 80px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -932,12 +1035,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 87px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -1066,12 +1164,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 115px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -1096,6 +1189,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 	color: #153254;
 	font-family: 'Aladin', cursive;
     font-size: 35px;
+    padding: 40px;
 
 }
 
@@ -1208,12 +1302,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 170px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -1350,12 +1439,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 10px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -1483,7 +1567,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		font-size: 45px;
 	}
 	#intro-content{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	#name{
@@ -1491,12 +1575,142 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 10px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
+	
+	#me .expertise-block {
+		margin: 4.0rem 0 1.0rem;
+	}
+	#social{
+		background-color: #6B317F;
+		color: #fff;
+		height: 440px;
 		text-align: center;
 		margin: 0 auto;
-		padding: 20px;
+		padding: 1px;
 	}
+
+	#social h3 {
+		margin-top: 80px;
+		margin-bottom: 100px;
+		color: #fff;
+		font-family: 'Aladin', cursive;
+		font-size: 45px;
+	}
+
+.summary{
+	color: #153254;
+	font-family: 'Aladin', cursive;
+    font-size: 25px;
+
+}
+
+	.smGlobalBtn{ /* global button class */
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border:2px solid #ddd; /* add border to the buttons */
+		box-shadow: 0 3px 3px #999;
+		padding: 0px;
+		margin: 15px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 50px;
+		-moz-border-radius:40px;
+		-webkit-border-radius:40px;
+	}
+
+	/* facebook button class*/
+	.facebookBtn{
+		background: #4060A5;
+	}
+
+	.facebookBtn:before{ /* use :before to add the relevant icons */
+		font-family: "FontAwesome";
+		content: "\f09a"; /* add facebook icon */
+	}
+
+	.facebookBtn:hover{
+		color: #4060A5;
+		background: #fff;
+		border-color: #4060A5; /* change the border color on mouse hover */
+	}
+
+	/* twitter button class*/
+	.twitterBtn{
+		background: #00ABE3;
+	}
+
+	.twitterBtn:before{
+		font-family: "FontAwesome";
+		content: "\f099"; /* add twitter icon */
+
+	}
+
+	.twitterBtn:hover{
+		color: #00ABE3;
+		background: #fff;
+		border-color: #00ABE3;
+	}
+
+	/* google plus button class*/
+	.googleplusBtn{
+		background: #e64522;
+	}
+
+	.googleplusBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0d5"; /* add googleplus icon */
+	}
+
+	.googleplusBtn:hover{
+		color: #e64522;
+		background: #fff;
+		border-color: #e64522;
+	}
+
+	/* linkedin button class*/
+	.linkedinBtn{
+		background: #0094BC;
+	}
+
+	.linkedinBtn:before{
+		font-family: "FontAwesome";
+		content: "\f0e1"; /* add linkedin icon */
+	}
+
+	.linkedinBtn:hover{
+		color: #0094BC;
+		background: #fff;
+		border-color: #0094BC;
+	}
+}
+
+@media (min-width: 1024px) and (max-width : 1279px) {
+	#picture{
+		width: 330px;
+		height: 400px; 
+		margin-bottom: 50px;
+		margin-left: 35px;
+	}
+
+	#intro-text{
+		font-size: 45px;
+	}
+	#intro-content{
+		font-size: 27px;
+	}
+
+	#name{
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -1612,6 +1826,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 }
 
 
+
  @media (min-width: 1280px) and (max-width : 1439px) {
  	#picture{
 		width: 400px;
@@ -1632,12 +1847,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		margin-left: 10px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
@@ -1770,23 +1980,17 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 	}
 
 	#name{
-		font-size: 28px;
+		font-size: 24px;
 		margin-left: 10px;
 	}
 
-	#me {
-		background-color: #c0c5ce;
-		text-align: center;
-		margin: 0 auto;
-		padding: 20px;
-	}
+	
 	#me .expertise-block {
 		margin: 4.0rem 0 1.0rem;
 	}
 	#social{
 		background-color: #6B317F;
 		color: #fff;
-		height: 440px;
 		text-align: center;
 		margin: 0 auto;
 		padding: 1px;
@@ -1909,8 +2113,11 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 #me {
 	background-color: #c0c5ce;
 	text-align: center;
-	margin: 0 auto;
-	padding: 20px;
+	margin: auto;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-bottom: 4%;
+	padding-top: 4%;
 }
 #me .expertise-block {
 	margin: 4.0rem 0 1.0rem;
@@ -1925,7 +2132,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 	height: auto;
 	text-align: center;
 	margin: 0 auto;
-	padding: 1px;
+	padding: 20px;
 }
 
 #social h3 {
