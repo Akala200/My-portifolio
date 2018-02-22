@@ -1829,8 +1829,8 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 
  @media (min-width: 1280px) and (max-width : 1439px) {
  	#picture{
-		width: 400px;
-		height: 501px; 
+		width: 370px;
+		height: 450px; 
 		margin-bottom: 50px;
 		margin-left: 40px;
 	}
@@ -1839,7 +1839,7 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 		font-size: 45px;
 	}
 	#intro-content{
-		font-size: 34px;
+		font-size: 30px;
 	}
 
 	#name{
@@ -1964,12 +1964,12 @@ background-image: linear-gradient(43deg, #6c177d 0%, #7d0e79 46%, #6f096d 100%);
 
 
   @media (min-width: 1440px) {
-  	#picture{
-		width: 350px;
-		height: 431px; 
-		margin-bottom: 50px;
-		margin-left: 100px;
-	}
+  	#picture {
+    width: 320px;
+    height: 411px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+}
 
 	#intro-text{
 		font-size: 45px;
