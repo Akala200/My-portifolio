@@ -1,96 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>Adeniyi Olatunji Akala</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet"
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet"
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+</head>
 </head>
 <body>
-	<section class="container-fluid content large-header">
-		<p class="text-left" id="name">Adeniyi Olatunji Akala</p>
-		<div>
-			<div id="large-header">
-				<canvas id="demo-canvas"></canvas>
-				<h1 class="display-1 text-center" id="intro-text">I AM A <br><span class="txt-rotate" data-period="2000" data-rotate='[ "DEVELOPER.", "CHESS MASTER.", "GAMER.", "NERD.", "TECH ENTHUSIAST." ]'></span></h1>
-			</div>
-		</div>
-	</section>
+	<section class="main">
+		<header id="header">	
+			<nav class="navbar navbar-expand-sm navbar-light bg-faded nav-tabs">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Brand -->
+				<h3 class="navbar-brand" style="color: #fff;" data-toggle="tab" id="name">Adeniyi Olatunji Akala</h3>
+				<!-- Links -->
+				<div class="collapse navbar-collapse" id="nav-content">  
+					<ul class="nav justify-content-end effect-underline">
+						<li class="nav-item active"><a class="nav-link" href="#home" data-toggle="tab">Meet Me</a></li>
+						<li class="nav-item"><a class="nav-link" href="#other" data-toggle="tab">Abilities</a></li>
+						<li class="nav-item"><a class="nav-link" target="_blank"  href="http://blog.deliveryscience.co/technology-as-far-as-africa-and-nigeria-is-concerned/">Writings</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-	<section class="container-fluid" id="secondcontainer">
-		<div>
-			<h3 class="display-3 text-center header">About</h3>
-			<div class="row" id="about">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="intro-content animated fadeInLeft">
-						<img src="image/mee.png" class="rounded-circle" id="picture">
+		<div class="container-fluid" id="myTabContent">
+			<div class="tab-content">
+				<div class="row tab-pane active" id="home">
+					<div class="col-lg-7">
+						<div id="content"></div>
+						<div class="divider"></div>
+						<div class="animated fadeInLeft" id="intro-content">
+							<p>I'm currently changing the world with Deliveryscience, a tech startup based in Lagos Nigeria.</p>
+							<p>I don't like sleeping too much because sleep is said to be death's kin.</p>
+							<p>I am the best FIFA (Soccer video game) player I've ever met, trust me I am.</p>
+							<p>Also, I almost forgot to mention that When I'm not programming, I play guitar and chess.</p>
+							<p>One final thing, I write articles from time to time but not as often as I should. <a target="_blank"  href="http://blog.deliveryscience.co/technology-as-far-as-africa-and-nigeria-is-concerned/">Feel free to check it out</a></p>
+						</div>
+					</div>
+					<div class="col-lg-5 hidden-xs hidden-sm hidden-md">
+						<img src="image/mee.png" class="rounded-circle animated fadeInRightBig" id="picture">
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="animated fadeInRight" id="intro-content">
-						<p>Hi, my name is Adeniyi Olatunji Akala. I am a front-end developer.</p>
-						<p>I'm currently changing the world with Deliveryscience, a tech startup based in Lagos Nigeria.</p>
-						<p> I am the best FIFA (Soccer video game) player I've ever met, trust me I am.</p>
-						<p>Also, I almost forgot to mention that When I'm not programming, I play guitar and chess. </p>
+				<div id="other" class="tab-pane row">
+					<div class="col-lg-8" id="content">
+						<p class="animated bounceInDown">I'm a big fan of TNPE ( Think, Nurture, Plan and Execute )</p>
+						<div class="divider"></div>
+						<div class="animated fadeInLeft" id="intro-content1">
+						   <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs.</p>
+							<p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
+							<p> I design in the browser with <span style="color: #ADD8E6;">HTML(5)</span>,<span style="color: #ADD8E6"> CSS(3)</span> and a touch of  <span style="color: #ADD8E6">JavaScript</span>. I love coding things from scratch, but I can work with front-end frameworks like <span style="color: #ADD8E6">Bootstrap</span>, <span style="color: #ADD8E6">Angular</span> and <span style="color: #ADD8E6">React</span>.</p>
+							<p>Interested in working with me? Please, feel free to <a target="_blank" href="https://twitter.com/BadestNinja">tweet</a>, <a target="_blank" href="mailto:adeiyiakala91@gmail.com">email</a> or buzz me via <a target="_blank"  href="https://www.facebook.com/awesomeGG">facebook</a> or <a target="_blank"  href="https://www.linkedin.com/in/adeniyi-olatunji-akala-7b153212a/">linkedin</a>.</p>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+					<div class="col-lg-4 hidden-xs hidden-sm hidden-md">
+					<div id="animation" class="animated fadeInUp">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="199px" height="224px" viewBox="0 0 199 224">
+								<g id="TRAZO">
+									<animateTransform attributeName="transform" type="translate" values="0 0; -5 -5; -3 -3; 0 0; -5 -5; -2 -2; 0 0; 2 2" begin="0s" repeatCount="indefinite" dur="2s" fill="freeze"/>
+									<path fill="#FFF" stroke="#000" stroke-width="0.8" d="M56.5,55.6c2.9-0.9,11.1-3.2,14-3.6c1.8-0.2,2.9,4.7,4.4,5.2 c2.5,0.7,5.9-1.4,10.2-2.3C75.8,24.2,52,46,56.5,55.6z"/>
+									<path fill="#FFF" stroke="#000" stroke-width="0.8" d="M96,70.9c3.4,9.4,10.5,29.5,11.8,33s13,0.4,11.4-4.2s-11-31.4-11-32.2 C105.5,58.3,92.6,61.5,96,70.9z"/>
+									<path fill="#FFF" stroke="#000" stroke-width="0.8" d="M75.7,89.5c0,0-4.2-9.8-4.2-15.3s5.043-8.04,7.9-8.8 c3.836-1.021,12.183-1.525,14.2,7.1c0,0.193,11.4,32.1,11.4,32.1s0.762,1.703,0,4.3c-0.123,0.123-8.7,24.8-8.7,24.8 s7.3,25.4,8.2,28.7c3,12.3-11.3,15-13.9,6.3c-1-3-9.2-28.8-9.2-28.8s-1.17-3.025,0-11.6c0,0.252,3.9-20.7,3.9-20.7l-1.8-2.9v-1.4 c0,0,1.2,0,3,0s4.1-4.4,4.1-4.4V86.4h-2.5v11.5c0,0-0.159,2.32-3.6,3.6c-1.395,0-19.4,0-25.4,0s-7-11.9,0-11.9 C70.8,89.5,75.7,89.5,75.7,89.5z"/>
+									<path fill="#FFF" stroke="#000" stroke-width="0.8" d="M59,56.9l10.5-2.2c0,0,2.8,3.9,4.2,4.6c1.4,0.6,4.1,0,5.9,0 c-0.5,4.4-6.7,6.1-12.6,6.1S59,56.9,59,56.9z"/>
+								</g>
+								<g id="circles">
+									<animateTransform attributeName="transform" type="translate" values="0 0; -5 -5; -3 -3; 0 0; -5 -5; -2 -2; 0 0; 2 2" begin="0s" repeatCount="indefinite" dur="2s" fill="freeze"/>
 
-	<section class="container-fluid" id="me">
-		<div>
-			<h3 class="display-3 header text-center">My Expertise</h3>
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<i class="fas fa-cogs fa-10x" style="color:#6F096D"></i>
-					<div class="expertise-block">
-						<h4 class="title slate"><b>Ideas</b></h4>
-						<p class="summary font-weight-bold">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<i class="fas fa-desktop fa-10x" style="color:#6F096D"></i>
-					<div class="expertise-block">
-						<h4 class="title slate"><b>UX/UI</b></h4>
-						<p class="summary font-weight-bold">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<i class="fas fa-code fa-10x" style="color:#6F096D"></i>
-					<div class="expertise-block">
-						<h4 class="title slate"><b>Code</b></h4>
-						<p class="summary font-weight-bold">I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.</p>
+									<g id="grupo1">
+										<circle fill="#FFF" cx="112.7" cy="112.4" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" calcMode="discrete" begin="0s;nueve.end"/>
+										</circle>
+										<circle fill="#FFF" cx="112.4" cy="116.7" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="uno.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="111.9" cy="120.5" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="dos.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="111.2" cy="124.3" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="tres.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="110.7" cy="128" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cuatro.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="110" cy="131.9" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cinco.end-0.1s"/>
+										</circle>
+									</g>
+									<g id="grupo2">
+										<circle fill="#FFF" cx="116.2" cy="117.6" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="0s;nueve.end"/>
+										</circle>
+										<circle fill="#FFF" cx="116.6" cy="121.7" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="uno.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="116.6" cy="125.4" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="dos.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="116.8" cy="129.4" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="tres.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="117.3" cy="133.2" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cuatro.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="117.7" cy="137.2" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cinco.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="118.3" cy="141.5" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="seis.end-0.1s"/>
+										</circle>
+									</g>
+									<g id="grupo3">
+										<circle fill="#FFF" cx="119.8" cy="119.3" r="1.6">
+											<animate id="uno" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="0s;nueve.end"/>
+										</circle>
+										<circle fill="#FFF" cx="120.9" cy="123.4" r="1.6">
+											<animate id="dos" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="uno.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="121.9" cy="126.9" r="1.6">
+											<animate id="tres" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="dos.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="123.2" cy="130.3" r="1.6">
+											<animate id="cuatro" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="tres.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="124.3" cy="133.7" r="1.6">
+											<animate id="cinco" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cuatro.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="125.8" cy="136.9" r="1.6">
+											<animate id="seis" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cinco.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="127.2" cy="140.2" r="1.6">
+											<animate id="siete" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="seis.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="128.4" cy="143.7" r="1.6">
+											<animate id="ocho" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="siete.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="130.1" cy="147.3" r="1.6">
+											<animate id="nueve" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="ocho.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="131.8" cy="151" r="1.6">
+											<animate id="diez" attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="nueve.end-0.1s"/>
+										</circle>
+									</g>
+									<g id="grupo4">
+										<circle fill="#FFF" cx="118.8" cy="113.9" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="0s;nueve.end"/>
+										</circle>
+										<circle fill="#FFF" cx="121.6" cy="116.5" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="uno.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="123.5" cy="119.6" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="dos.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="125.6" cy="122.8" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="tres.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="127.6" cy="126" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cuatro.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="129.9" cy="129.3" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cinco.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="132.1" cy="132.3" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="seis.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="134.7" cy="135.2" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="siete.end-0.1s"/>
+										</circle>
+									</g>
+									<g id="grupo5">
+										<circle fill="#FFF" cx="120.7" cy="109.8" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="0s;nueve.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="123" cy="112.6" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="uno.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="125.8" cy="115.2" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="dos.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="128.2" cy="118.2" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="tres.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="130.5" cy="121.2" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cuatro.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="132.7" cy="124.5" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="cinco.end-0.1s"/>
+										</circle>
+										<circle fill="#FFF" cx="135.3" cy="127.7" r="1.6">
+											<animate attributeName="fill" dur="175ms" values="#000;#FFF" calcMode="discrete" begin="seis.end-0.1s"/>
+										</circle>
+									</g>
+								</g>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<footer class="container-fluid" id="social">
-		<div>
-			<h3 class="display-3 text-center">Social Presence</h3>
-			<div id="reach">
-				<a class="facebookBtn smGlobalBtn" href="https://web.facebook.com/awesomeGG"></a>
-				<a class="twitterBtn smGlobalBtn" href="https://twitter.com/BadestNinja"></a>
-				<a class="googleplusBtn smGlobalBtn" href="https://plus.google.com/u/0/117975820834355911516" ></a>
-				<a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/adeniyi-olatunji-akala-7b153212a/"></a>
-			</div>
-		</div>
-	</footer>
-	<script type="js/javascript" src="js/jquery-3.3.1.js"></script>
-	<script type="js/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script src="js/TweenLite.min.js"></script>
-	<script src="js/EasePack.min.js"></script>
-	<script src="js/animation.js"></script>
+</section>
+
+
+
+
+<script type="js/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="js/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
+
+
