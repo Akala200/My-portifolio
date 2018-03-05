@@ -107,8 +107,33 @@
 }
 
 
+#header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left :0;
+  padding: 2rem;
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+  font-family: sans-serif;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 130;
+  margin-right: 30px;
+  padding-right: 30px;
+}
 
+.scrolled{
+  background-color: #044a6d;
+  transition: 0.3s;
+}
 
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background-color: #fff;
+}
 
 
 
