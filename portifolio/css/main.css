@@ -35,13 +35,6 @@
 
 
 
-
-#header {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-}
-
 #name {
 	font-size: 19px;
 	font-weight: 300;
@@ -70,6 +63,7 @@
 #intro-content{
 	font-size: 23px;
 	animation-delay: 2.5s;
+	margin-bottom: 20px;
 }
 
 #intro-content1{
@@ -96,6 +90,10 @@
 	float: right;
 }
 
+#myTabContent{
+	margin-top: -50px;
+}
+
 #picture{
 		margin-bottom: 30px;
 		background-color: #fff;
@@ -108,16 +106,15 @@
 
 
 #header{
-  position: fixed;
+  position: relative;
   width: 100%;
+  z-index: 999;
   top: 0;
   left :0;
-  padding: 2rem;
   border: none;
   background-color: transparent;
   overflow: hidden;
   font-family: sans-serif;
-  transition: 0.3s;
   color: #fff;
   font-size: 17px;
   font-weight: 130;
@@ -125,15 +122,12 @@
   padding-right: 30px;
 }
 
-.scrolled{
-  background-color: #044a6d;
-  transition: 0.3s;
-}
 
 .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer;
     background-color: #fff;
 }
+
 
 
 
